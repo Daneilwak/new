@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "popins",sans-serif;
+}
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #feb704;
+}
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+}
+.header{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+
+}
+.folio{
+    color: blue;
+   
+}
+.folio:hover,
+.folio:active{
+    color: #feb704;
+}
+
+.logo{
+    padding: 0px;
+   font-size: 20px;
+   list-style: none;
+   font-family:'Times New Roman', Times, serif;
+   text-transform: uppercase;
+   color: white;
+}
+.logo a:hover,
+.logo a:active{
+color: #feb704;
+}
+
+.hidden{
+    font-size: 16px;
+    border-bottom: 3px solid transparent;
+    text-shadow: #feb704;
+    
+}
+.hidden a:hover,
+.hidden a:active{
+    color: var(--main-color);
+    text-shadow: #feb704;
+    
+    
+}
+.image{
+    width: 300px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 25px blue;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    margin-left: 320px;
+}
+.image:hover {
+   box-shadow: 0 0 25px var(--main-color);
+}
+.head1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.body .text{
+    position: relative;
+    color: blue;
+    font-size: 30px;
+    font-weight: 600;
+}
+.body .text.web{
+    color: rgb(245, 246, 242);
+}
+.text.web-sec:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:var(--bg-color);
+    border-left: 2px solid blue;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left:100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+ 
+.head{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.dan{
+    
+    font-family:'Times New Roman', Times, serif;
+}
+.dan:hover{
+    color: #feb704;
+}
+.head3{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
